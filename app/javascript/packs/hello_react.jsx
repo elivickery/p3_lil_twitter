@@ -7,11 +7,28 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
 const Hello = props => (
-  <div>Hello {props.name}!</div>
+  <div style={{
+    marginTop: '80px',
+    border: '2px solid black',
+    borderRadius: '10px',
+    padding: '10px 20px'
+  }}>
+    <p>Hello from {props.name}!</p>
+    <p>
+      The code in this box was generated from these files:
+    </p>
+    <ul>
+      <li><code>app/javascript/packs/hello_react.jsx</code></li>
+      <li><code>app/javascript/packs/application.js</code></li>
+      <li><code>app/views/pages/_react.html.erb</code></li>
+    </ul>
+    <p>The code for the rest of this page is in <code>app/views/pages/home.html.erb</code></p>
+    <p>Re-implement entire dynamic part of <code>home.html.erb</code> (the parts for composing a tweet, showing recent tweets, and showing what's trending) in React.</p>
+  </div>
 )
 
 Hello.defaultProps = {
-  name: 'David'
+  name: 'Webpacker'
 }
 
 Hello.propTypes = {
@@ -21,6 +38,6 @@ Hello.propTypes = {
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Hello name="React" />,
-    document.body.appendChild(document.createElement('div')),
+    document.querySelector('#react-target'),
   )
 })
