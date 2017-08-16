@@ -23,7 +23,7 @@ const Hello = props => (
       <li><code>app/views/pages/_react.html.erb</code></li>
     </ul>
     <p>The code for the rest of this page is in <code>app/views/pages/home.html.erb</code></p>
-    <p>Re-implement entire dynamic part of <code>home.html.erb</code> (the parts for composing a tweet, showing recent tweets, and showing what's trending) in React.</p>
+    <p>Re-implement all of <code>home.html.erb</code> in pure React.</p>
   </div>
 )
 
