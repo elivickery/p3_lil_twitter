@@ -14,7 +14,7 @@ export default class Header extends Component {
         <form id="search-form">
           <input id="search" type="text" name="query" />
         </form>
-        <i class="fa fa-search"></i>
+        <i className="fa fa-search"></i>
       </header>
     );
 
